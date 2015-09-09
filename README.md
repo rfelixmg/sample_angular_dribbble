@@ -8,6 +8,11 @@ Markup : 1 AngularJS (v. 1.0.7 : monochromatic-rainbow);
          2 Bootstrap v2.3.2; and
          3 DribbleAPI;
 
+ Markup : 1. A numbered list
+           1. A nested numbered list
+           2. Which is numbered
+          2. Which is numbered
+
 ** References: **
 
 Markup : 
