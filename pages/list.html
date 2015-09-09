@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+ <div>
+    <ul class="thumbnails">
+        <li class="shot span3" ng-repeat="shot in list.shots">
+            <div class="thumbnail">
+                <a href="#/shots/{{ shot.id }}">
+                    <img ng-src="{{ shot.image_url }}" />
+                </a>
+                <strong class="title">{{ shot.title }}</strong>
+                <a class="player" href="#">
+                    {{ shot.player.name }}
+                </a>
+                <div class="stats">
+                    <span class="stat">
+                        <i class="icon-eye-open"></i>
+                        {{ shot.views_count }}
+                    </span>
+                    <span class="stat">
+                        <i class="icon-comment"></i>
+                        {{ shot.comments_count }}
+                    </span>
+                    <span class="stat">
+                        <i class="icon-heart"></i>
+                        {{ shot.likes_count }}
+                    </span>
+                    <span class=stat>
+                        <i class="icon-share-alt"></i>
+                        {{ shot.rebounds_count }}
+                    </span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <button class="btn btn-primary" ng-click="loadNexPage()" ng-show="list.page < list.pages">
+    Load More
+    </button>
+</div>
